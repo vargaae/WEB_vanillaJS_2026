@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vargaae - VanillaJS Projects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body id="top">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo"><a href="#top">VargaAE - VanillaJS</a></div>
+      <div id="nav-links" class="nav-links">
+        <a href="#">Kezdőlap</a>
+        <a href="#products">Vásárlás</a>
+        <a href="#contact">Kapcsolat</a>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        <button id="cart-button" class="cart-button">
+          🛒<span class="cart-count">0</span>
+        </button>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <h1>Fedezd fel a jövőt!</h1>
+      <p>
+        Legegészségesebb bio termékek verhetetlen áron. Vásárolj most egyszerűen
+        és gyorsan.
+      </p>
+      <a href="#products" class="btn-primary">Fedezd fel</a>
+    </header>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4f46e5" />
+            <stop offset="100%" stop-color="#0ea5e9" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z"
+          fill="url(#waveGradient)"
+        />
+      </svg>
+    </div>
+
+    <!-- Termékek -->
+    <section id="products" class="products-section">
+      <div class="filters">
+        <div class="filters-left">
+          <button class="filter-btn active" data-file="minden.json">
+            Összes
+          </button>
+          <button class="filter-btn" data-file="szezonalis.json">
+            Szezonális
+          </button>
+          <button class="filter-btn" data-file="raktaron.json">Raktáron</button>
+          <button class="filter-btn" data-file="rendelheto.json">
+            Rendelhető
+          </button>
+        </div>
+
+        <div class="filters-right">
+          <select id="category-filter" class="filter-select">
+            <option value="all">Minden kategória</option>
+          </select>
+        </div>
+      </div>
+      <h2 class="section-title">Termékeink</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <!-- Kosár Modal -->
+    <div id="cart-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <h2>Kosár</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">
+          <strong>Összesen:</strong> <span id="cart-total-price">0 Ft</span>
+        </div>
+        <button id="checkout-btn" class="btn-primary">Megrendelés</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <p>
+        © 2026 VanillaJS Projektek - BioShop - Andras Varga. Minden jog
+        fenntartva.
+      </p>
+    </footer>
+  </body>
+</html>

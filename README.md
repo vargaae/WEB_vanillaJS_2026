@@ -1,6 +1,6 @@
 # VANILLA JAVASCRIPT
 
-## 3. Vanilla JS E-commerce Application
+## Vanilla JS E-commerce Application
 
 ## APPLICATION
 
@@ -46,6 +46,14 @@ HTML 5-CSS 3-JS ES6 - ECMAScript 2018
 
 ### Folder structure
 
+- ── index.html # Main webpage
+- ├── css/
+- │ └── style.css # Styling
+- ├── img/
+- │ └── hero-bg.jpg # Background image for Hero section
+- ├── js/
+- │ └── script.js # Functionality
+
 - dist/
 - ├── css/
 - │ └── style.css # Styling
@@ -54,10 +62,9 @@ HTML 5-CSS 3-JS ES6 - ECMAScript 2018
 - ├── js/
 - │ └── script.js # Functionality
 - ├── index.html # Main webpage for deploy
-- ── index.html # Main webpage
 - ── thankyou.html # Successful order page
 - ── package.json
 
 ## 🚀 Running the App
 
-Simply run index.html
+Simply run index.html on XAMPP in htdocs or in Live Server
