@@ -1,0 +1,13 @@
+[
+    {
+        "id": "12",
+        "category": "Magyaros",
+        "name": "Szilva",
+        "description_hu": "B\u00e1rsonyos m\u00e9ly \u00edz",
+        "description_en": "Velvety deep flavor",
+        "picture": "img\/szilva.jpg",
+        "price_huf": "1190",
+        "price_eur": "2.90",
+        "stock": "-1"
+    }
+]
